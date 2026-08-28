@@ -603,6 +603,7 @@ class uploader:
         self.board_type = self.__getInfo(uploader.INFO_BOARD_ID)
         self.board_rev = self.__getInfo(uploader.INFO_BOARD_REV)
         self.fw_maxsize = self.__getInfo(uploader.INFO_FLASH_SIZE)
+        print(f"Bootloader maximum firmware size: {self.fw_maxsize} bytes ({self.fw_maxsize / 1024:.1f} KiB)")
 
         self.version = self.__getVersion()
 
