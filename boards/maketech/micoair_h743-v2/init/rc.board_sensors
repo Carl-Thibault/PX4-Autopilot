@@ -15,5 +15,8 @@ bmi270 -s -b 3 -R 0 start
 # Internal baro
 spl06 -I -a 0x77 start
 
+# External BMP581 barometer
+bmp581 -X -b 1 -a 0x47 start
+
 # External mag
 qmc5883l -I -a 0x0D -R 4 start
